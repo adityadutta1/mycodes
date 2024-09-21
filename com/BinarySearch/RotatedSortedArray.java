@@ -1,3 +1,5 @@
+package com.BinarySearch;
+
 import java.util.*;
 public class RotatedSortedArray {
     public static int binarySearchRotated(List<Integer> nums, int target) {
