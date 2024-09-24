@@ -1,4 +1,4 @@
-class Solution {
+class KokoEatingBanana {
   public static int minEatingSpeed(int[] piles, int h) {
         int low = 1; // Minimum speed
         int totalBananas = 0; // Total bananas
