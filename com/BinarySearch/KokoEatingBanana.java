@@ -33,4 +33,14 @@ class Solution {
 
         return low; // This will be the minimum speed
     }
+  // Helper function to check if all bananas can be finished in h hours with speed k
+    private static boolean canFinish(int[] piles, int k, int h) {
+        int totalHours = 0; // Initialize total hours required
+        
+        for (int pile : piles) {
+            totalHours += Math.ceil((double) pile / k); // Add time to eat each pile
+        }
+
+        return totalHours <= h; // Return true if total hours is within h
+    }
 }
